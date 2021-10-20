@@ -1,0 +1,2 @@
+boto3>=1.18.60
+AWSIoTPythonSDK>=1.4.9

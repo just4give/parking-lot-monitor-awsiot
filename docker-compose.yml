@@ -1,0 +1,25 @@
+version: '2.1'
+services: 
+        ei-processing:
+                build: ./ei-processing
+                privileged: true
+                restart: always
+                network_mode: host
+                container_name: ei-processing
+                ports: 
+                        - 8080
+                labels:
+                        io.balena.features.dbus: '1'
+                        io.balena.features.kernel-modules: '1'
+                volumes: 
+                        - 'shared-data:/var/data'
+                        - 'shared-media:/var/media'
+                environment:
+                        - UDEV=1
+                devices:
+                        - '/dev:/dev'
+        
+volumes:
+        shared-data:
+        shared-media:
+        

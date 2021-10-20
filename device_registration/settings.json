@@ -1,0 +1,1 @@
+{"host": "a2c6vtfn7g8m57-ats.iot.us-east-1.amazonaws.com", "caPath": "./certs/AmazonRootCA1.pem", "certificateArn": "arn:aws:iot:us-east-1:027378352884:cert/c7a392939d57737944e848a9d09b34ee7676c888c700aedf15cbbe79c6dfdb4c", "certPath": "./certs/certificate.pem.crt", "keyPath": "./certs/private.pem.key"}
