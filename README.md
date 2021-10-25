@@ -40,6 +40,33 @@ pip3 install awscli --upgrade --user
 ```
 Or follow [this](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv1.html) link. After installation is done, you need to configure AWS CLI. Follow [this](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) article to set it up.
 
+You are now ready to create AWS resources. To communicate with AWS IoT Core from Edge devices, at minimum we need following AWS rerources to be created. 
+- A Policy
+- Key & Certificate
+- Thing
+
+Policy needs to be attached to the certificate and certificate needs to be attched to the "thing".
+If you are doing this first time, this might sound complicated. Don't worry! I have a python `register.py` utility program under device_registration folder which will create all above resources. Before you execute the program, you may want to change below variables.
+
+```
+THING_NAME="EI_BALENA_THING"
+THING_TYPE="EI-Thing"
+POLICY_NAME="EI-Thing-Policy"
+```
+Then execute below commands
+```
+cd device_registration
+python3 register.py
+```
+Above program will create all the resources and download the key and certificate and store them under `certs` folder.
+To validate, you may run `pubsub.py`. This program will connect to your AWS IoT core using downloaded key & certificate and send data to `EI_TOPIC` topic every 5 seconds. Log into your AWS console and make sure your topic is receiving data. 
+
+Once everything is verified and looking good, copy below files from `device_registration/certs` folder to `ei_processing/app/certs`
+```
+certificate.pem.crt
+private.pem.key
+```
+
 
 ## Build Model With Edge Impulse
 
