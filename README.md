@@ -31,8 +31,15 @@ Scale your parking lot monitoring system or any TinyML solution using AWS IoT , 
 * Sign up for a free [BalenaCloud account](https://www.balena.io/)
 * [balenaEtcher](https://www.balena.io/etcher/)
 * Sign up for a free [AWS account](https://console.aws.amazon.com/)
+* Python 3.7+ and pip
 
 ## Create AWS IoT Resources and Certificates
+You must have an active AWS account to create resources on AWS cloud. First install and configure AWS CLI
+```
+pip3 install awscli --upgrade --user
+```
+Or follow [this](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv1.html) link. After installation is done, you need to configure AWS CLI. Follow [this](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) article to set it up.
+
 
 ## Build Model With Edge Impulse
 
