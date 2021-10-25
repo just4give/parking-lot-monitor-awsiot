@@ -66,11 +66,13 @@ Once everything is verified and looking good, copy below files from `device_regi
 certificate.pem.crt
 private.pem.key
 ```
-
+## Create Balena Fleet 
+Before we collect images to train our model, we need to create balena fleet and connect Raspberry Pi directly to Edge Impulse data collection module.
 
 ## Build Model With Edge Impulse
 
-## Create Balena Fleet 
+
+
 
 ## Scale By Adding New Devices
 
