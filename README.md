@@ -86,9 +86,11 @@ Click on the *deploy-with-balena* button as given below, which will help you to 
 [![](https://balena.io/deploy.png)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/just4give/parking-lot-monitor-awsiot)
 
 On the popup modal, select your device type (Raspberry Pi 3 or 4 ) and toggle "Advanced" switch.
-<img width="1665" alt="Screen Shot 2021-10-26 at 9 58 47 PM" src="<img width="1010" alt="Screen Shot 2021-10-26 at 10 09 51 PM" src="https://user-images.githubusercontent.com/9275193/138987981-a8899856-aba1-4e92-9283-e912e4c2563b.png">">
+
+<img width="1010" alt="Screen Shot 2021-10-26 at 10 09 51 PM" src="https://user-images.githubusercontent.com/9275193/138987981-a8899856-aba1-4e92-9283-e912e4c2563b.png">
 
 That should expand the fleet variables section. Paste API key from Edge Impulse Studio under EI_API_KEY_IMAGE. Set collection mode to "Y" and make sure your EI_TOPIC is same as your used during device registration.
+
 <img width="1011" alt="Screen Shot 2021-10-26 at 10 10 13 PM" src="https://user-images.githubusercontent.com/9275193/138988167-1838c41e-9fa0-4965-bd8e-5e8034e31437.png">
 
 Then click on  "Create and deploy" button. In a moment, you should see your fleet on Balena Cloud account. You should see a button "+ Add device". Clicking on that should open a modal. Choose Ethernet+Wifi, enter your Wifi SSID & password. Then click on "Download balenaOs" button. This should download the image as a zip file. Flash this image on a SD card using Balena Etcher. Put the SD card on Raspberry Pi 3 and plug the device to power. Wait for 5-10 minutes and your device should come online on balena cloud.
