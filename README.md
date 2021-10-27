@@ -66,8 +66,20 @@ Once everything is verified and looking good, copy below files from `device_regi
 certificate.pem.crt
 private.pem.key
 ```
+## Create Edge Impulse Project
+Head over to [Edge Impluse Studio](https://studio.edgeimpulse.com), click on your profile name, then click on `+ Create new project`. Enter a name for your project and choose object detection when prompted. After your project is created, you will be taken to project dashboard page. Click on "Keys" tab and create a new API key. 
+
+<p align="center">
+<img width="978" alt="Screen Shot 2021-10-17 at 11 05 37 AM" src="https://user-images.githubusercontent.com/9275193/138987190-06286698-ab28-4727-8f82-e21237a1262e.png">
+
+</p>
+
+Copy the API key and save somewhere. You need that in a moment.
+
 ## Create Balena Fleet 
-Before we collect images to train our model, we need to create balena fleet and connect Raspberry Pi directly to Edge Impulse data collection module.
+Click on the *deploy-with-balena* button as given below, which will help you to deploy your application to balenaCloud and then to your Raspbery Pi in **one-click!**
+
+[![](https://balena.io/deploy.png)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/just4give/parking-lot-monitor-awsiot)
 
 ## Build Model With Edge Impulse
 
