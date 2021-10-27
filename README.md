@@ -195,6 +195,9 @@ Now as we configured and deployed object detection model to our device, it's tim
 
 In few minutes, new device should show up on your fleet dashboard and ready for object detection. It's that simple! If you head over to AWS console, you will notice data coming from both the devices. Each device has unique `uuid`.
 
+![Screen Shot 2021-10-27 at 11 57 30 AM](https://user-images.githubusercontent.com/9275193/139121190-34531dd0-04a9-4d50-b1e2-20a86f42c06e.png)
+
+
 
 
 ## Extending The Solution
