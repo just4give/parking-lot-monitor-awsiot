@@ -52,6 +52,9 @@ You are now ready to create AWS resources. To communicate with AWS IoT Core from
 Policy needs to be attached to the certificate and certificate needs to be attched to the "thing".
 If you are doing this first time, this might sound complicated. Don't worry! I have a python `register.py` utility program under device_registration folder which will create all above resources. Before you execute the program, you may want to change below variables.
 
+#### Warning
+To get you up and running quickly, the policy used in the code is wide open. This is not recommended for production use. Please learn more anout [IoT policy](https://docs.aws.amazon.com/iot/latest/developerguide/certificate-policy-examples.html) and use policy as restrictive as possible.
+
 ```
 THING_NAME="EI_BALENA_THING"
 THING_TYPE="EI-Thing"
